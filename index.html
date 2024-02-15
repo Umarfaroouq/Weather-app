@@ -10,25 +10,25 @@
         <div class="search">
             <input type="text" placeholder="enter city name"
             spellcheck="false">
-            <button><img src="images-2/search.png"></button>
+            <button><img src="search.png"></button>
         </div>
         <div class="error">
             <p>Invalid city name</p>
         </div>
         <div class="weather">
-            <img src="images-2/rain.png" class="weather-icon">
+            <img src="rain.png" class="weather-icon">
             <h1 class="temp">22ºc</h1>
             <h2 class="city">Shenyang</h2>
             <div class="details">
                 <div class="col">
-            <img src="images-2/humidity.png">
+            <img src="humidity.png">
                 <div>
                 <p class ="humidity">50%</p>
                 <p>Humidity</p>
                 </div>
         </div>
             <div class="col">
-                <img src="images-2/wind.png">
+                <img src="wind.png">
                 <div>
                     <p class ="wind">15km/h</p>
                     <p>Wind Speed</p>
@@ -61,15 +61,15 @@ document.querySelector(".humidity").innerHTML=data?.main?.humidity + "%";
 document.querySelector(".wind").innerHTML=data?.wind?.speed + "km/h";    
 
 if(data?.weather[0]?.main == "Clouds" ){
-weatherIcon.src= "images-2/clouds.png";
+weatherIcon.src= "clouds.png";
 }
 else if(data?.weather[0]?.main =="Clear" ){  
-    weatherIcon.src = "images-2/clear.png";} else if(data?.weather[0]?.main =="Rain" ){   weatherIcon.src= "images-2/rain.png";
+    weatherIcon.src = "images-2/clear.png";} else if(data?.weather[0]?.main =="Rain" ){   weatherIcon.src= "rain.png";
 }
-else if(data?.weather[0]?.main =="Drizzle" ){  weatherIcon.src= "images-2/drizzle.png";
+else if(data?.weather[0]?.main =="Drizzle" ){  weatherIcon.src= "drizzle.png";
 
 }
-else if(data?.weather[0]?.main =="Mist" ){  weatherIcon.src= "images-2/mist.png";
+else if(data?.weather[0]?.main =="Mist" ){  weatherIcon.src= "mist.png";
 
 }
 document.querySelector(".weather").style.display="block"
